@@ -1,28 +1,19 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Charts;
 
-use App\Attendance;
-use App\User;
-use Chartisan\PHP\Chartisan;
-use ConsoleTVs\Charts\BaseChart;
+use ConsoleTVs\Charts\Classes\Chartjs\Chart;
 use Illuminate\Http\Request;
 
-class AttendanceChart extends BaseChart
+class AttendanceChart extends Chart
 {
     /**
-     * Handles the HTTP request for the given chart.
-     * It must always return an instance of Chartisan
-     * and never a string or an array.
+     * Initializes the chart.
+     *
+     * @return void
      */
-    public function handler(Request $request): Chartisan
+    public function __construct()
     {
-        return Chartisan::build()
-            ->labels(['Today'])
-            ->dataset('In', [Attendance::countAttendance(false)])
-            ->dataset('Out', [Attendance::countAttendance(true)])
-            ->dataset('Total User', [User::where('is_admin', false)->count()]);
+        parent::__construct();
     }
 }

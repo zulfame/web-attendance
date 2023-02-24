@@ -50,7 +50,7 @@
                                     <th>Status</th>
                                     <th>Check In Time</th>
                                     <th>Check Out Time</th>
-                                    <th></th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                         </table>
