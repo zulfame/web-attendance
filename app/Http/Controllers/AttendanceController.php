@@ -10,11 +10,11 @@ class AttendanceController extends Controller
 {
     /**
      * Construct
-     * @return void
+     * @return void 
      */
     public function __construct()
     {
-        $this->middleware(['auth', 'is_admin']);
+        $this->middleware(['auth']);
     }
 
     public function index(Request $request)
