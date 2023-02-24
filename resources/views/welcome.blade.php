@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,34 +17,36 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+
 <body class="hold-transition lockscreen">
-<!-- Automatic element centering -->
-<div class="lockscreen-wrapper">
-  <div class="lockscreen-logo">
-    <a href="#"><b>Attendance</b>Live</a>
-  </div>
+  <!-- Automatic element centering -->
+  <div class="lockscreen-wrapper">
+    <div class="lockscreen-logo">
+      <a href="#"><b>Attendance</b>Live</a>
+    </div>
 
-  <!-- START LOCK SCREEN ITEM -->
-  <div class="lockscreen-item text-center">
-        <h2>Welcome Page</h2>
+    <!-- START LOCK SCREEN ITEM -->
+    <div class="lockscreen-item text-center">
+      <h2>Welcome Page</h2>
+    </div>
+    <!-- /.lockscreen-item -->
+    <div class="help-block text-center">
+      Enter your email and password to retrieve your session
+    </div>
+    <div class="text-center">
+      <a href="{{ url('login') }}">login</a>
+    </div>
+    <div class="lockscreen-footer text-center">
+      Copyright &copy; 2014-2019 <b><a href="http://adminlte.io" class="text-black">AdminLTE.io</a></b><br>
+      All rights reserved
+    </div>
   </div>
-  <!-- /.lockscreen-item -->
-  <div class="help-block text-center">
-    Enter your email and password to retrieve your session
-  </div>
-  <div class="text-center">
-    <a href="{{ url('login') }}">login</a>
-  </div>
-  <div class="lockscreen-footer text-center">
-    Copyright &copy; 2014-2019 <b><a href="http://adminlte.io" class="text-black">AdminLTE.io</a></b><br>
-    All rights reserved
-  </div>
-</div>
-<!-- /.center -->
+  <!-- /.center -->
 
-<!-- jQuery -->
-<script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <!-- jQuery -->
+  <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
+  <!-- Bootstrap 4 -->
+  <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 </body>
+
 </html>
